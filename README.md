@@ -1,6 +1,6 @@
 # Using this template
 
-Set up find `tap-example` and `TODO` in all files and folders in this project and update as required.
+Find `tap-example`, `tap_example`, and `analyze-example` in all files and folders in this project and update as required.
 
 - [ ] Update directory tap-example with your taps name under `bundle/analyze/datasets/tap-example`.
 - [ ] Update `Makefile`, replacing `tap-example` with your tap name.
