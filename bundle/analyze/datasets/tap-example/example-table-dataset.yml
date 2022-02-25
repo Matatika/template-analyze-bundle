@@ -1,0 +1,27 @@
+version: datasets/v0.2
+source: tap-example
+title: Example Table
+questions: Example question?
+description: |-
+  Example table.
+
+  #example
+metadata: |-
+  {
+    "name": "example_table",
+    "label": "Example Table", 
+    "related_table": {
+      "columns": [
+        {"name": "name", "label": "Name", "description": "Name"}, 
+        {"name": "logins", "label": "No. of Logins", "description": "No. of Logins"}
+      ]
+    }
+  }
+visualisation: '{"google-chart": {"chartType": "Table"}}'
+query: |-
+  SELECT 
+    MIN(name) "example_table.name"
+    , COUNT(*) "example_table.logins"
+  FROM example_table
+  GROUP BY user_id
+  ORDER BY "example_logins.logins" desc

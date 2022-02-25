@@ -1,0 +1,7 @@
+example-chart-dataset: |-
+  [{"example_logins.name": "Aaron", "example_logins.logins": 141},
+  {"example_logins.name": "Austin", "example_logins.logins": 97},
+  {"example_logins.name": "Dan", "example_logins.logins": 71},
+  {"example_logins.name": "Debs", "example_logins.logins": 44},
+  {"example_logins.name": "Pilot", "example_logins.logins": 36},
+  {"example_logins.name": "Reuben", "example_logins.logins": 1}]

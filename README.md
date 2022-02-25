@@ -5,10 +5,32 @@ Find `tap-example`, `tap_example`, and `analyze-example` in all files and folder
 - [ ] Update directory tap-example with your taps name under `bundle/analyze/datasets/tap-example`.
 - [ ] Update `Makefile`, replacing `tap-example` with your tap name.
 - [ ] Updated `setup.py` replacing `tap-example` with your tap name.
+
 - [ ] Update `README` replacing `tap-example`, `tap_example` and `analyze-example`.
 - [ ] Update `README` adding your tap and analyze bundle details in the example snippets.
 
-A `README` template is included below.
+A `README` template is included below starting with the title `analyze-example`.
+
+- [ ] Create or edit some dataset yml files, examples included in `bundle/analyze/datasets/tap-example`.
+- [Dataset docs](https://www.matatika.com/docs/data/data-visualisation/dataset-yaml).
+- Analyze bundle examples: [analyze-solarvista](https://github.com/Matatika/analyze-solarvista), [analyze-meltano](https://github.com/Matatika/analyze-meltano)
+
+## Adding rawdata files
+
+NOTE: You only need to include `rawdata` if you plan on producing the chart snippets for documentation. Then you only need rawdata files for `chart` datasets. 
+
+Snippets for table datasets get automatically created, exports currently do not have snippets created.
+
+When creating rawdata files keep in mind:
+- The name of the `rawdata` file should match the `dataset` file.
+- There should be only one key inside the `rawdata` file and it should also match the name of the `dataset` file.
+- The rawdata will be an array of objects with the same names as the metadata of the `dataset` expects.
+
+Example: [tap meltano dataset](https://github.com/Matatika/analyze-meltano/blob/master/bundle/analyze/datasets/tap-meltano/meltano-daily-jobs-stats-last-30-days.yml) and [tap meltano dataset rawdata](https://github.com/Matatika/analyze-meltano/blob/master/rawdata/meltano-daily-jobs-stats-last-30-days.yml).
+
+See how the in the metadata of the dataset the `name` is `mdj`, then the column and aggregate names are `date`, `total_jobs`, `successful_jobs` and `failed_jobs`. In the rawdata we reference these by `mdj.date` and so on.
+
+---
 
 # analyze-example
 

@@ -1,0 +1,43 @@
+version: datasets/v0.2
+source: tap-example
+title: Example Chart Dataset
+questions: Example question?
+description: |-
+  Example description.
+
+  #example
+metadata: |-
+  {
+    "name": "example_logins",
+    "label": "Example Chart Dataset", 
+    "related_table": {
+      "columns": [
+        {"name": "name", "label": "Name", "description": "Name"}
+      ],
+      "aggregates": [
+        {"name": "logins", "label": "No. of Logins", "description": "No. of Logins"}
+      ]
+    }
+  }
+visualisation: |-
+  {"chartjs-chart": 
+    {"chartType": "bar", 
+      "options": {
+        "scales": {
+          "yAxes": [{
+            "ticks": {
+              "beginAtZero": true,
+              "stepSize": 1
+            }
+          }]
+        }
+      }
+    }
+  }
+query: |-
+  SELECT 
+    MIN(name) "example_table.name"
+    , COUNT(*) "example_table.logins"
+  FROM example_table
+  GROUP BY user_id
+  ORDER BY "example_logins.logins" desc
