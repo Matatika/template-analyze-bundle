@@ -1,0 +1,27 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env.dev
+
+
+# Converted HTML Datasets
+*.html
+html_charts/
+output/
+
+.project
+
+# Eclipse
+.project
+
+# vscode
+.vscode
+
+# Local Build Files
+build/
+analyze_meltano.egg-info/
