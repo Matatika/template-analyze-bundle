@@ -4,16 +4,34 @@ Find `tap-example`, `tap_example`, and `analyze-example` in all files and folder
 
 - [ ] Update directory tap-example with your taps name under `bundle/analyze/datasets/tap-example`.
 - [ ] Update `Makefile`, replacing `tap-example` with your tap name.
-- [ ] Updated `setup.py` replacing `tap-example` with your tap name.
+- [ ] Update `setup.py` replacing `tap-example` with your tap name.
+
+
+
+- [ ] Update or Remove `bundle/analyze/orchestrate/tap-example`. 
+
+Only needed if you need different pipeline commands to the [Matatika default pipeline actions](https://github.com/Matatika/matatika-examples/blob/master/example_data_import_scripts/default-actions.sh)
+
+Examples of these scripts: [custom data import scripts](https://github.com/Matatika/matatika-examples/blob/master/example_data_import_scripts/default-actions.sh)
+
+- [ ] Update `elt.sh` inside of `bundle/analyze/orchestrate/tap-example` with your custom default pipeline script is needed.
+
+
 
 - [ ] Update `README` replacing `tap-example`, `tap_example` and `analyze-example`.
 - [ ] Update `README` adding your tap and analyze bundle details in the example snippets.
 
+
+
 A `README` template is included below starting with the title `analyze-example`.
 
+
+
 - [ ] Create or edit some dataset yml files, examples included in `bundle/analyze/datasets/tap-example`.
-- [Dataset docs](https://www.matatika.com/docs/data/data-visualisation/dataset-yaml).
-- Analyze bundle examples: [analyze-solarvista](https://github.com/Matatika/analyze-solarvista), [analyze-meltano](https://github.com/Matatika/analyze-meltano)
+
+[Dataset docs](https://www.matatika.com/docs/data/data-visualisation/dataset-yaml).
+
+Analyze bundle examples: [analyze-solarvista](https://github.com/Matatika/analyze-solarvista), [analyze-meltano](https://github.com/Matatika/analyze-meltano)
 
 ## Adding rawdata files
 
