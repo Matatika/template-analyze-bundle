@@ -14,6 +14,7 @@ Only needed if you need different pipeline commands to the [Matatika default pip
 
 Examples of these scripts: [custom data import scripts](https://github.com/Matatika/matatika-examples/blob/master/example_data_import_scripts/default-actions.sh)
 
+- [ ] Update or remove `setup.py` path for `/orchestrate/tap-example/elt.sh`
 - [ ] Update `elt.sh` inside of `bundle/analyze/orchestrate/tap-example` with your custom default pipeline script is needed.
 
 

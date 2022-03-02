@@ -8,6 +8,7 @@ setup(
     package_data={
         "bundle": [
             "analyze/datasets/tap-example/*.yml",
+            "orchestrate/tap-example/elt.sh"
         ]
     },
 )
