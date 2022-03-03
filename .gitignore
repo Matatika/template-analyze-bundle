@@ -24,4 +24,4 @@ output/
 
 # Local Build Files
 build/
-analyze_meltano.egg-info/
+analyze*.egg-info/
